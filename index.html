@@ -4,153 +4,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chocs Indonesia</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet" />
-    <link rel="icon" href="img/ON logo.jpg">
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
+    <title>Choco</title>
+    <link rel="stylesheet" href="styles.css"/>
 </head>
 <body>
-  <nav class="nav-bar">
-    <ul>
-      <li><a href="./index.html"><span>Home</span></a></li>
-      <li><a href="./about_us.html"><span>About Us</span></a></li>
-      <li><a href="./purchase.html"><span>Purchase</span></a></li>
-      <li><a href="#contact-us"><span>Products</span></a></li>
-      <li><a href="#contact-us"><span>Location</span></a></li>
 
-    </ul>
-  </nav>
-  <section class="welcome" id="welcome">
-      <div class="welcome-text">
-        <span class="text1">CHocs Indonesia </span>
-        <span class="text2">Famous Chocolate Brand in Indonesian</span>
-      </div>
-      </section>
-
-      <section class="home" id="home"> 
-        <div class="home-isi">          
-          <h3 data-aos="fade-down">I'm</h3>
-          <h1 data-aos="fade-up">M. Naufal Hidayat</h1> 
-          <p class="persegi">ini persegi</p>
-         
-          <h4 data-aos="fade-right">Mastered Software & <br> Programming Language :</h4>
-          <p data-aos="fade-right">A Fresh Graduate In Bina Nusantara University <br> in Major Computer Science And Proposing <br> A Job For Front-End Developer  </p>
-          <div class="gambar"> 
-            <img data-aos="slide-up" class="diri" src="img/fotodiri.png" alt="Gambar Diri">
-
-            <table data-aos="slide-up">
-              <tr>
-                <th>Tahun</th>
-                <th>Pendidikan</th>
-                
-              </tr>
-              <tr>
-                <td>2021-2025</td>
-                <td>Bina Nusantara : Computer Science</td>
-              </tr>
-            </table>
-
-
+    <nav class="navbar">
+        <div class="navbar__container">
+            <a href="#home" id="navbar__logo">CHocs</a>
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
             </div>
-
-           
-          <div class="box">
-            <div class="imgbox">
-              <img data-aos="slide-up" src="img/Microsoft Visual Studio Code.png" alt="Visual Studio Code">
-              </div>
-            <div class="content">
-              <h2>Visual Studio Code</h2>
-            </div>
-            
-          </div>
-        
-
-        <div class="box1">
-          <div class="imgbox1">
-
-            <img data-aos="slide-up" src="img/Adobe Premiere Pro.png" alt="Adobe Premiere Pro">
-            </div>
-          <div class="content1">
-            <h2>Adobe Premiere Pro</h2>
-          </div>
-          
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="#home" class="navbar__links" id="home-page">Home</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="#about" class="navbar__links" id="about-page">About Us</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="#product" class="navbar__links" id="product-page">Product</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="#location" class="navbar__links" id="location-page">Location</a>
+                </li>
+            </ul>
         </div>
-
-        <div class="box2">
-          <div class="imgbox2">
-
-            <img data-aos="slide-up" src="img/icon++html+icon-1320194800994962643.png" alt="Adobe Premiere Pro">
-            </div>
-          <div class="content2">
-            <h2>Hyper Text <br> Markup Language</h2>
-          </div>
-          
-        </div>
-
-        <div class="box3">
-          <div class="imgbox3">
-
-            <img data-aos="slide-up" src="img/css.png" alt="Adobe Premiere Pro">
-            </div>
-          <div class="content3">
-            <h2>Cascading  <br> Style Sheets</h2>
-          </div>
-        </div>
-      </div>        
-      </section>
-
-       <section class="portofolio" id="portofolio">
-
-        <h3 data-aos="fade-up">My Best Selected Portofolio</h3>
-
-        <div data-aos="zoom-out-up" class="card1">
-        <h4>Web Design</h4>
-        <h2>Coffe Shop Website</h2>
-        <img data-aos="flip-right" src="img/coffeweb.jpg" alt="">
-        </div>
-
-        <div data-aos="zoom-out-up" class="card2">
-          <h4>Web Design</h4>
-          <h2>Vape Store Website</h2>
-          <img data-aos="flip-left" src="img/vapeweb.png" alt="">
-        </div>
-        
-
-      </section>
+    </nav>        
 
 
-      
-     <section class="contact-us" id="contact-us">
-        <h4 data-aos="fade-right" ><span>Contact</span> Us</h4>
-
-      <form action="submit">
-        <label data-aos="fade-right" for="name">Name</label>
-        <input  data-aos="fade-right"class="inputS" type="text" id="name" />
-    
-        <label data-aos="fade-right" for="email">Email</label>
-        <input data-aos="fade-right" class="inputS" type="email" id="email" />
-        
-        <label data-aos="fade-right" for="Linkedin">LinkedIn</label>
-        <input data-aos="fade-right" class="inputS" type="password" id="Linkedin" />
-
-        <label data-aos="fade-right "for="message">Comment</label>
-        <textarea data-aos="fade-right" id="message" cols="30" rows="10"></textarea>
-
-        <a href="#home"><span>Send</span></a>
-      </form>
-    </section> 
-
-
-
-
-
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
 </body>
 </html>
