@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap');
+
+
+/* Inisialisasi */
+
+ * {
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+} *
+
+body {
+  background-color: #252839;
+}
+
+.nav-bar {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  position: sticky;
+  padding: 0px;
+}
+
+.nav-bar ul {
+  margin: auto;
+  width: fit-content;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.nav-bar ul li {
+  display: inline;
+  margin: 0 10px;
+}
+
+.nav-bar a{
+  position: relative;
+  display: inline-block;
+  padding: 15px 30px ;
+  border: 2px solid #f1bd3f;
+  margin: 20px;
+  text-transform: uppercase;
+  font-weight: 600;
+  text-decoration: none;
+  letter-spacing: 2px;
+  color: white;
+  -webkit-box-reflect: below 0px linear-gradient(transparent,#0002);
+  transition: 0.5s;
+  transition-delay: 0s;
+}
+
+.nav-bar a:hover {
+  transition-delay: 1.5s;
+  color: black;
+  box-shadow: 0 0 10px #f1bd3f,
+  0 0 20px #f1bd3f,
+  0 0 40px #f1bd3f,
+  0 0 80px #f1bd3f,
+  0 0 100px #f1bd3f;
+}
+
+.nav-bar span{
+  position: relative;
+  z-index: 100;
+}
+
+/* ------------------------------- Nav-Bar Animation ------------------------ */
+.nav-bar  a::before{
+  content: '';
+  position: absolute;
+  left: -20px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 2px;
+  background: #f1bd3f;
+  box-shadow: 5px -8px 0 #f1bd3f,
+              5px 8px 0 #f1bd3f ;
+  transition: width 0.5s, left 0.5s, height 0.5s, box-shadow 0.5s;
+  transition-delay: 1s,0.5s,0s,0s;
+}
+
+.nav-bar a:hover::before{
+  width: 60%;
+  height: 110%;
+  left: -2px;
+  box-shadow: 5px 0 0 #f1bd3f,
+              5px 0 0 #f1bd3f ;
+  transition-delay: 0s,0.5s,1s,1s;
+}
+
+
+.nav-bar  a::after{
+  content: '';
+  position: absolute;
+  right: -20px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 2px;
+  background: #f1bd3f;
+  box-shadow: -5px -8px 0 #f1bd3f,
+              -5px 8px 0 #f1bd3f ;
+  transition: width 0.5s, right 0.5s, height 0.5s, box-shadow 0.5s;
+  transition-delay: 1s,0.5s,0s,0s;
+}
+
+.nav-bar a:hover::after{
+  width: 60%;
+  height: 110%;
+  right: -2px;
+  box-shadow: -5px 0 0 #f1bd3f,
+              -5px 0 0 #f1bd3f ;
+  transition-delay: 0s,0.5s,1s,1s;
+}
+
+
+/* Header */
+.header{
+    display: grid;
+    grid-template-areas:
+     'hero hero feature-1'
+     'hero hero feature-2';
+}
+
+.hero{
+    grid-area: hero;
+    min-height: 350px;
+    background-image: url(img/artisan-chocolate-jpeg.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 50px;
+}
+
+.hero > * {
+  display: none;
+}
+
+.features {
+  background-color: #000;
+  color: white;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  cursor: pointer;
+}
+
+.feature-1{
+  grid-area: feature-1;
+  background-image: url(img/istockphoto-522735736-170667a.jpg);
+  background-size: cover;
+}
+
+.feature-2{
+  grid-area: feature-2;
+  background-image: url(img/Double-Chocolate-Chip-Cookies-1-4.jpg);
+  background-size: cover;
+}
