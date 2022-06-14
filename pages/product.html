@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="./style/main_style.css" />
+  <link rel="stylesheet" href="../style/main_style.css" />
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <link rel="stylesheet"
     href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css"
@@ -27,48 +27,46 @@
       </div>
       <ul class="navbar__menu">
         <li class="navbar__item">
-          <a href="./home.html" class="navbar__links" id="home-page">Home</a>
+          <a href="../index.html" class="navbar__links" id="home-page">Home</a>
         </li>
         <li class="navbar__item">
-          <a href="./about_us.html" class="navbar__links" id="about-page">About Us</a>
+          <a href="../pages/about_us.html" class="navbar__links" id="about-page">About Us</a>
         </li>
         <li class="navbar__item">
-          <a href="./product.html" class="navbar__links" id="product-page">Product</a>
+          <a href="../pages/product.html" class="navbar__links" id="product-page">Product</a>
         </li>
         <li class="navbar__item">
-          <a href="./purchase.html" class="navbar__links" id="product-page">Purchase</a>
+          <a href="../pages/purchase.html" class="navbar__links" id="product-page">Purchase</a>
         </li>
         <li class="navbar__item">
-          <a href="./location.html" class="navbar__links" id="location-page">Location</a>
+          <a href="../pages/location.html" class="navbar__links" id="location-page">Location</a>
         </li>
       </ul>
     </div>
   </nav>
 
-  <section class="contact-us" id="contact-us">
-    <h4 data-aos="fade-right"><span>Form</span> Biodata </h4>
+  <section class="product">
+    <div class="product-main">
+      <h1>Our New Arival : </h1>
 
-    <form onsubmit="validateForm()">
-      <label data-aos="fade-right" for="name">Name</label>
-      <input class="inputS" type="text" id="name" />
+      <div class="main1">
+        <h2>Big Coco</h2>
+        <h3>Rp 62.000</h3>
+        <p>Big Coco is an choco bar with 7 different chocolate inside <br> and vanilla hint</p>
+        <img src="../img/artisan-chocolate-jpeg.jpg" alt="">
+      </div>
 
-      <label data-aos="fade-right" for="phone">Phone Number</label>
-      <input data-aos="fade-right" class="inputS" type="text" id="phone" />
+      <div class="main2">
+        <h2>Royal Choco Chips</h2>
+        <h3>Rp 38.000</h3>
+        <p>Choco chips that made by real cocoa<br> with choco chips and roasted almond</p>
+        <img src="../img/Double-Chocolate-Chip-Cookies-1-4.jpg" alt="">
+      </div>
 
-      <label data-aos="fade-right" for="Quantity">Quantity</label>
-      <input data-aos="fade-right" class="inputS" type="number" id="Quantity" />
 
-      <label data-aos="fade-right" for="pChoice">Product Choice</label>
-      <!-- <select name="Product" id="pChoice">
-          <option value="Darchie">DarChie (Dark Chocolate)</option>
-          <option value="cpie">ChocoPie</option>
-        </select> -->
-      <label data-aos="fade-right" for="adds">Address</label>
-      <input data-aos="fade-right" class="inputS" type="text" id="adds" />
-
-      <button>Purchase</button>
-    </form>
+    </div>
   </section>
+
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
     AOS.init();
