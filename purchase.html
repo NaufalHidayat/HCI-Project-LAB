@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Purchase</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="main_style.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css"
+    integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
+    <script defer src="./app.js"></script>
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="navbar__container">
+      <a href="#home" id="navbar__logo">CHocs</a>
+      <div class="navbar__toggle" id="mobile-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+      <ul class="navbar__menu">
+        <li class="navbar__item">
+          <a href="./home.html" class="navbar__links" id="home-page">Home</a>
+        </li>
+        <li class="navbar__item">
+          <a href="./about_us.html" class="navbar__links" id="about-page">About Us</a>
+        </li>
+        <li class="navbar__item">
+          <a href="./product.html" class="navbar__links" id="product-page">Product</a>
+        </li>
+        <li class="navbar__item">
+          <a href="./purchase.html" class="navbar__links" id="product-page">Purchase</a>
+        </li>
+        <li class="navbar__item">
+          <a href="./location.html" class="navbar__links" id="location-page">Location</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="contact-us" id="contact-us">
+    <h4><span>Form</span> Biodata </h4>
+    <form id="form" action="./purchase.html" method="GET">
+
+      <div class="input-control">
+        <label for="name">Name</label>
+        <input name="username" type="text" id="username">
+        <div class="error"></div>
+      </div>
+
+      <div class="input-control">
+        <label for="phone">Phone Number</label>
+        <input name="phone" type="text" id="phone" >
+        <div class="error"></div>
+      </div>
+
+
+      <div class="input-control">
+        <label for="Quantity">Quantity</label>
+        <input  type="number" id="Quantity">
+        <div class="error"></div>
+      </div>
+
+
+      <label for="pChoice">Product Choice</label>
+      <select name="Product" id="pChoice">
+          <option value="Darchie">DarChie (Dark Chocolate)</option>
+          <option value="cpie">ChocoPie</option>
+        </select>
+
+      <div class="input-control">
+        <label for="adds">Address</label>
+        <input  type="text" id="adds" >
+        <div class="error"></div>
+      </div>
+
+
+      <button type="submit">Purchase</button>
+    </form>
+  </section>
+
+</body>
+
+</html>
